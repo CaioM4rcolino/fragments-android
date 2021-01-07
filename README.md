@@ -1,2 +1,2 @@
 # fragments-android
-primeira activity usando fragments
+Primeira Activity Android usando fragments e menu de navegação
