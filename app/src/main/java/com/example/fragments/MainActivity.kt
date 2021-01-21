@@ -5,22 +5,27 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import com.example.fragments.fragmentos.ConsoleFragment
 import com.example.fragments.fragmentos.GameFragment
 import com.example.fragments.fragmentos.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(),
+                     BottomNavigationView.OnNavigationItemSelectedListener,
+                     NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var fragmentHome: HomeFragment
     private lateinit var fragmentConsole: ConsoleFragment
     private lateinit var fragmentGame: GameFragment
 
     private lateinit var bottomNavigation: BottomNavigationView
+    private lateinit var drawerNavigation: NavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.drawer_navigation_layout)
 
         fragmentHome = HomeFragment()
         fragmentConsole = ConsoleFragment()
@@ -28,7 +33,9 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         bottomNavigation = findViewById(R.id.bottomNavigation)
 
-        bottomNavigation.setOnNavigationItemSelectedListener(this)
+        drawerNavigation = findViewById(R.id.drawer_navigation)
+
+        drawerNavigation.setNavigationItemSelectedListener(this)
 
         supportFragmentManager
             .beginTransaction()
