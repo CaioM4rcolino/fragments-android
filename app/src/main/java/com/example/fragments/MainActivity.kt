@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity(),
 
         drawerNavigation = findViewById(R.id.drawer_navigation)
 
+        bottomNavigation.setOnNavigationItemSelectedListener(this)
         drawerNavigation.setNavigationItemSelectedListener(this)
 
         supportFragmentManager
