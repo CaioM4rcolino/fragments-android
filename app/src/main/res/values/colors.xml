@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#5005CA</color>
-    <color name="vermelho">#BF0606</color>
-    <color name="colorAccent">#00C108</color>
-    <color name="branco">#fff</color>
-    <color name="preto">#000</color>
+<color name="colorPrimary">#9577FF</color>
+<color name="colorPrimaryDark">#5005CA</color>
+<color name="vermelho">#BF0606</color>
+<color name="colorAccent">#00C108</color>
+<color name="branco">#fff</color>
+<color name="preto">#000</color>
+<color name="cinza">#B1B1B1</color>
+<color name="darkPurple">#1D0060</color>
+<color name="azul">#FC0523C8</color>
 </resources>

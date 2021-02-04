@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.fragments.fragmentos.HomeFragment"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/darkPurple">
 
-    <!-- TODO: Update blank fragment layout -->
+<!--    <include layout="@layout/toolbar"/>-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
