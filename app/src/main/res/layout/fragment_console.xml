@@ -4,15 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.fragments.fragmentos.ConsoleFragment"
-    android:background="@color/azul">
+    android:background="@color/cinza">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Consoles"
-        android:textColor="@color/branco"
-        android:textSize="48sp"
-        android:layout_centerInParent="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_consoles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/holder_console_layout"/>
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/branco"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/round_button"
+
+        />
 
 </RelativeLayout>
